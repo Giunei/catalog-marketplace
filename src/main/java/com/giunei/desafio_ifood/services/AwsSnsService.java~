@@ -1,0 +1,16 @@
+package com.giunei.desafio_ifood.services;
+
+import com.amazonaws.services.sns.AmazonSNS;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AwsSnsService {
+
+    AmazonSNS snsClient;
+
+    public AwsSnsService(AmazonSNS snsClient) {
+        this.snsClient = snsClient;
+    }
+
+    
+}
